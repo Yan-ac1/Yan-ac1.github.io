@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en"; background=".\res\imgif.gif"> 
     <style> 
         .center{text-align: center;}
         .blue{
@@ -8,7 +8,7 @@
     <head>
         <title> Hello </title>
     </head>
-    <body bgcolor='red'>
+    <body>
         <h1 class="center"; title="paragraph";> Hello </h1>
         <p> <a href="https://www.tutorialspoint.com/html/html_headings.htm">
             paragraph </a> </p>
@@ -27,11 +27,17 @@
         <p>
             This is image:
         </p>
-        <img src="\res\imgif.gif">
+        <map name="img">
+            <area shape="circle"; coords="1,30,10"; href="url"; alt="Description">
+            <img src=".\res\imgif.gif"; usemap="#img">
+        </map>
+        <img src=".\res\im.jpg">
+        <iframe src="https://www.tutorialspoint.com/html/html_headings.htm"> iframe </iframe>
         <form> 
             <label for="user_name"> <strong>input name: </strong> </label>
             <input type="text" id="user_name" name="user_name" required>
             <input type="submit">
         </form>
+        <p> <code>codes</code> </p>
     </body>
 </html>
